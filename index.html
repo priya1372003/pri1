@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="justify-content: center;" onload="clock();">
+   
+   <div class="a">
+    <div class="b"> <h1></h1></div>
+   </div> 
+   <script>
+    function clock(){
+        var date = new Date();
+        var hr=date.getHours();
+        var min=date.getMinutes();
+        var sec=date.getSeconds();
+        var time=hr+":"+min+":"+sec;
+document.getElementsByTagName("h1")[0].innerText=time;
+setTimeout(clock,1000);
+
+    }
+
+   
+    
+   </script>
+</body>
+</html>
